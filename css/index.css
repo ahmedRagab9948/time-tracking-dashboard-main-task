@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Rubik;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+
+section {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section .container .row .div1 {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+section .container .row .div1 .items {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  padding: 25px 20px 51px 30px;
+}
+section .container .row .div1 .items img {
+  height: 65px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+section .container .row .div1 .items h5 {
+  color: hsl(246, 70%, 82%);
+  padding-top: 30px;
+  font-weight: 100;
+  font-size: 13px;
+}
+section .container .row .div1 .items h3 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 32px;
+}
+section .container .row .div1 .link {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  padding-left: 30px;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+section .container .row .div1 .link a {
+  text-decoration: none;
+  color: hsl(235, 45%, 61%);
+  margin-bottom: 10px;
+}
+section .container .row .div1 .link a:hover {
+  color: hsl(236, 100%, 87%);
+}
+section .container .row .div1 .link .active {
+  color: hsl(236, 100%, 87%);
+}
+
+section .container .row .work {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+section .container .row .work .top {
+  background-image: url("../images/icon-work.svg");
+}
+
+section .container .row .play {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+section .container .row .play .top {
+  background-image: url("../images/icon-play.svg");
+}
+
+section .container .row .study {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+section .container .row .study .top {
+  background-image: url("../images/icon-study.svg");
+}
+
+section .container .row .exercise {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+section .container .row .exercise .top {
+  background-image: url("../images/icon-exercise.svg");
+}
+
+section .container .row .social {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 25px;
+}
+section .container .row .social .top {
+  background-image: url("../images/icon-social.svg");
+}
+section .container .row .self-care {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 40px;
+}
+section .container .row .bottom:hover {
+  background-color: hsl(235, 44%, 31%);
+}
+section .container .row .self-care .top {
+  background-image: url("../images/icon-self-care.svg");
+}
+section .container .row .top {
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  height: 40px;
+}
+section .container .row .bottom {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 13px;
+  padding: 25px;
+  padding-bottom: 15px;
+}
+section .container .row .bottom .first {
+  display: flex;
+  justify-content: space-between;
+}
+section .container .row .bottom .first h6 {
+  font-weight: 400;
+  font-size: 18px;
+}
+section .container .row .bottom .first i {
+  cursor: pointer;
+}
+section .container .row .bottom .second h3 {
+  font-size: 48px;
+  font-weight: 100;
+}
+section .container .row .bottom .second h5 {
+  font-size: 12px;
+  color: hsl(235, 45%, 61%);
+}
+
+
+/* ############################## Responsive ####################### */
+
+@media screen and (max-width: 768px) {
+  section {
+    position: absolute;
+    top: 50px;
+    transform: translateY(0);
+  }
+  section .container .row .div1 {
+    margin-bottom: 25px;
+  }
+  section .container .row .div1 .items {
+    padding: 25px 20px 20px 30px;
+    display: flex;
+    align-items: center;
+  }
+  section .container .row .div1 .items h5 {
+    padding-top: 0;
+  }
+  section .container .row .div1 .items h3 {
+    font-size: 18px;
+  }
+  section .container .row .div1 .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section .container .row .bottom .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
